@@ -14,9 +14,9 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         root_file: rapport_stage.tex
-        latexmk_use_lualatex: true  # ou false si tu préfères pdflatex
+        latexmk_use_lualatex: true
 
-    - name: Archive PDF output
+    - name: Upload PDF file
       uses: actions/upload-artifact@v4
       with:
         name: rapport_stage
